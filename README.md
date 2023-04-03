@@ -6,7 +6,7 @@ E-hub is a software company that provides various types of software solutions to
 <br>
 
 # Database Resource Setting For Connection:
-java
+```java
 package GUI;
 
 public class secret {
@@ -14,12 +14,12 @@ public class secret {
 	public String password="Give Your Password Here";
 	public String url="Give Your Driver URL Here";
 }
-
+```
 
 * The secret file is not removed from the location in the folders so that you can edit it
 * Create a new Database using pgAdmin or any postgresql client for your E-Hub application. Execute the following queries to set up the Database for usage:
 
-sql
+```sql
 create table Person
 (
 	ID varchar(6),
@@ -82,7 +82,7 @@ create table Project_Team
 	primary key(Project_id, Emp_ID),
 	foreign key (Project_leader) references Employee(Emp_ID) on delete cascade
 );
-						 
+```						 
 
 
 # OOPS Concepts used: 
